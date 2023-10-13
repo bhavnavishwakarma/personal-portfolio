@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/248ac79212.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="navbar">
+            <nav>
+                <div class="logo "><span>Portfolio</span></div>
+           
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About me</a></li>
+                    <li><a href="#"> Project</a></li>
+                    <li><a href="#"> Resume</a></li>
+                    <li><a href="#"> contact</a></li>
+                </ul>
+            
+
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi,I'm Bhavna Vishwakarma</h1>
+                <p style="color: #ff004f ;;">Frontend Web-Developer</p>
+                <h4>Designing the web, one click at a time</h4>
+                <a href="Resume Bhavna Vishwakarma _.png " download class="btn btn2"> Download Resume</a>
+                
+            </div>
+
+        </div>
+    <!--right section-->
+    <div class="image">
+        <img src="port.png">
+    </div>
+
+    </div>
+    <!--about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image-side.png ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>  A passionate and aspiring  web developer and Currently pursuing Master's degree in computer Application at lakshmi Narain collage of Technology .
+                        I got my Bachelor's degree in computer Application from Vikramaditya collage Bhopal . I'm really passionate about learning new technology 
+                         because I think it can do some good things and I'm always eager to learn more.I'm good at c and java programming language  and I'm also good at communicating,
+                          solving problems, and working in teams. As a frontend develope I'm familiar with tools like vscode and github.I'm looking forward to this journey
+                           in web Technology. I can't wait to face the opportunities and challenges ahead.                        
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <P class="tab-links active-link" onclick="opentab('skills')"> skills</P>
+                        <P class="tab-links " onclick="opentab('Experience')"> Experience</P>
+                        <P class="tab-links" onclick="opentab('Education')"> Education</P>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> C language</span><br>basic programming </li>
+                            <li><span> java </span><br> on hand experience ,
+                                problem solving</li>
+                            <li><span> mySql</span><br>database</li>
+                            <li><span> Html</span><br> web development</li>
+                            <li><span> Css</span><br>web development </li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Internship</span><br>web development<br> Bharat Intern</li>
+                           
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Collage/Institute</span><br>Lakshmi Narain collage of technology </li>
+                            
+                           
+                        </ul>
+                     </div>
+
+
+
+                </div>
+
+            </div>
+
+    </div>
+
+    </div>
+    <!--my work/project---------->
+    <div id="myWork">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+            <div class="myWork-list">
+                <div>
+                 <h2> temperature converter</h2>
+                 <p>A temperature converter to find the different readings
+                     of a given temperature on different unit measuring scales.
+                      A temperature converter helps convert the temperature celusis to fehrenheit and kelvin scale</p>   
+               
+                </div>
+                <div>
+                    <h2> Netflix homepage clone</h2>
+                    <p> Netflix is a subscription-based streaming service that allows <br>our members 
+                        to watch TV shows and movies on an internet-connected device.   </p>   
+                 
+                   </div>
+                   <div>
+                    <h2>online basic calculator </h2>
+                    <p> This free online calculator can be used for basic computations such as addition, subtraction,
+                         multiplication, division, and square roots. </p>   
+                  
+                   </div>
+
+            </div>
+
+        </div>
+        <a href="#" class="btn"> see more</a>
+
+    </div>
+    <!----------------------------------------------contact me ---------------------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact details</h1> 
+              <p> <i class="fa-solid fa-square-envelope"></i>vishbhavna4082@gmail.com</p> 
+              <p><i class="fa-solid fa-phone"></i> 930xxxxx0344</p>
+              <div class="social-icons">
+        <a href=" https://www.facebook.com/profile.php?id=100009600222319&sk=about"> <i class="fa-brands fa-facebook"></i></a>
+        <a href= "https://www.linkedin.com/in/bhavna-vishwakarma-7651bb223/"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/bhavnavishwakarma99/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/bhavnavishwakarma"><i class="fa-brands fa-github"></i></a>
+ 
+              </div>
+             <!--resume shift-->
+            
+        </div>
+    </div>
+
+</div>
+<div class="copyright">
+    <p>copyright@ bhavna vishwakarma <i class="fa-solid fa-heart"></i>.</p>
+</div>
+
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for( tabcontent of  tabcontents){
+            
+                tabcontent.classList.remove("active-tab");
+             }
+             
+             event.currentTarget.classList.add("active-link"); 
+             document.getElementById(tabname).classList.add("active-tab");
+ }
+ 
+        
+    </script>
+    
+</body>
+</html>
